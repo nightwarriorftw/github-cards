@@ -1,9 +1,19 @@
-# next boilerplate
+# Github Cards
 
 ## About
 
-A `Next.js` boilerplate.
+Just another side project :)
 
-- nextjs
-- tailwindcss
-- typescript
+### Development Setup
+
+- Install dependencies
+
+```
+yarn
+```
+
+- Run the development server
+
+```
+yarn dev
+```
