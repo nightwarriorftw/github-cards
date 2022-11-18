@@ -1,8 +1,14 @@
+import styles from "../styles/Home.module.css";
+
 const Header = () => {
   return (
-    <>
-      <h1>Header</h1>
-    </>
+    <main>
+      <h1 className={styles.title}>
+        Github App
+      </h1>
+
+      
+    </main>
   );
 };
 

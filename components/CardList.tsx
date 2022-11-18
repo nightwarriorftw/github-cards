@@ -1,13 +1,11 @@
-import { ProfileType } from "../utils";
+import { useProfileContext } from "./CardApp";
 import Card from "./Card";
+import styles from "../styles/Home.module.css";
 
-interface CardListPropType {
-  profiles: ProfileType[];
-}
-
-const CardList = ({ profiles }: CardListPropType) => {
+const CardList = () => {
+  const [profiles] = useProfileContext();
   return (
-    <div>
+    <div className={styles.grid}>
       {profiles.map((profile, idx) => (
         <Card key={idx} profile={profile} />
       ))}
