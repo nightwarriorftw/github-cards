@@ -8,8 +8,8 @@ interface CardListPropType {
 const CardList = ({ profiles }: CardListPropType) => {
   return (
     <div>
-      {profiles.map((profile) => (
-        <Card key={profile.login} profile={profile} />
+      {profiles.map((profile, idx) => (
+        <Card key={idx} profile={profile} />
       ))}
     </div>
   );

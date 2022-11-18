@@ -10,7 +10,7 @@ export type ProfileType = {
   following: number;
 };
 
-export const profiles: ProfileType[] = [
+export const defaultProfiles: ProfileType[] = [
   {
     name: "Aman Verma",
     login: "nightwarriorftw",

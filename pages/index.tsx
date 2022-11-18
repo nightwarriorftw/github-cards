@@ -1,18 +1,28 @@
-import styles from "../styles/Home.module.css";
 import Header from "../components/Header";
 import CardList from "../components/CardList";
 import UserInput from "../components/UserInput";
 import { NextPage } from "next";
-import { profiles } from "../utils";
+import { defaultProfiles, ProfileType } from "../utils";
+import { useEffect, useState } from "react";
 
 const Home: NextPage = () => {
+  const [profiles, setProfiles] = useState(defaultProfiles);
+
+  const addCard = (newCard: ProfileType) => {
+    setProfiles([...profiles, newCard]);
+  };
+
+  useEffect(() => {
+    setTimeout(() => {
+      setProfiles([...profiles, defaultProfiles[0]]);
+    }, 500);
+  }, []);
+
   return (
-    <div className={styles.container}>
+    <div>
       <Header />
-      <main className={styles.main}>
-        <UserInput />
-        <CardList profiles={profiles} />
-      </main>
+      <UserInput addCard={addCard}/>
+      <CardList profiles={profiles} />
     </div>
   );
 };
