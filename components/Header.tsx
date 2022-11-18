@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <main>
       <h1 className={styles.title}>
-        Github App
+        Github Cards
       </h1>
 
       
