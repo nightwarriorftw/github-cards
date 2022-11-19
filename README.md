@@ -47,7 +47,6 @@ yarn start
 - Linkedin: [nightwarriorftw](https://linkedin.com/in/nightwarriorftw)
 - Twitter: [nightwarriorftw](https://twitter.com/nightwarriorftw)
 
-Credits goes to me
 
 ## :lock: License
 
